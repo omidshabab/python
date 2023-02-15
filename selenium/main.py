@@ -14,7 +14,7 @@ if __name__ == '__main__':
     driver.set_window_size(600,500)
   
     # Send a get request to the url
-    driver.get('https://www.landina.co/')
+    driver.get('https://landina.co/')
     time.sleep(60)
     driver.quit()
     print("Done")
