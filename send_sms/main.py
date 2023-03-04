@@ -1,13 +1,15 @@
 # Download the helper library from https://www.twilio.com/docs/python/install
 import os
 from twilio.rest import Client
+from dotenv import load_dotenv
+load_dotenv()
 
 # Set environment variables for your credentials
 # Read more at http://twil.io/secure
-account_sid = "AC41678a548e89c03acda1f41db2487cfe"
-auth_token = "ff9dfc5e52ee89c49ad2fcbc8d93c509"
-verify_sid = "VAe25e5180c263fef55fa40561d0f5d833"
-verified_number = "+989934901913"
+account_sid = os.getenv("account_sid")
+auth_token = os.getenv("auth_token")
+verify_sid = os.getenv("verify_sid")
+verified_number = os.getenv("verified_number")
 
 client = Client(account_sid, auth_token)
 
