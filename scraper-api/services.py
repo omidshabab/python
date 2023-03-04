@@ -7,7 +7,7 @@ def get_all_events() -> Dict:
         
     return data
 
-def month_events(month: str) -> Dict:
+def get_month_events(month: str) -> Dict:
     events = get_all_events()
     try:
         month_events = events[month]

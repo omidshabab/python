@@ -13,4 +13,4 @@ async def all_events():
 
 @app.get("/events/{month}")
 async def get_events_of_month(month: str):
-    
+    return _services.get_month_events(month)
