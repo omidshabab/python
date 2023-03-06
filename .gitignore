@@ -2,4 +2,5 @@
 */.DS_Store
 */venv
 */.env
+*/TOKEN.txt
 .ipynb_ckeckpoints

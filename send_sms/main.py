@@ -2,7 +2,10 @@
 import os
 from twilio.rest import Client
 from dotenv import load_dotenv
-load_dotenv()
+from pathlib import Path
+
+dotenv_path = Path('.env')
+load_dotenv(dotenv_path=dotenv_path)
 
 # Set environment variables for your credentials
 # Read more at http://twil.io/secure
